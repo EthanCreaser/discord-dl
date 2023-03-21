@@ -28,6 +28,6 @@ while True:
     for message in messages:
         if message['content'] == '':
             continue
-        print(name + message['content'])
+        print(name + ': ' + message['content'])
 
     response = requests.get(url + messages[-1]['id'], headers=headers)
