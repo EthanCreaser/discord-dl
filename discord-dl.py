@@ -6,8 +6,6 @@
 import requests
 import json
 
-# 'config.json' should store the target channel's ID under the value id' and a
-# member user's authentication token under the value 'token'.
 f = open('config.json', 'r')
 config = json.load(f)
 f.close()
